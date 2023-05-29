@@ -123,6 +123,8 @@ public class FlyoutPageItem
 
 A <xref:Microsoft.Maui.Controls.DataTemplate> is assigned to the `CollectionView.ItemTemplate` property, to display each `FlyoutPageItem`. The <xref:Microsoft.Maui.Controls.DataTemplate> contains a <xref:Microsoft.Maui.Controls.Grid> that consists of an <xref:Microsoft.Maui.Controls.Image> and a <xref:Microsoft.Maui.Controls.Label>. The <xref:Microsoft.Maui.Controls.Image> displays the `IconSource` property value, and the <xref:Microsoft.Maui.Controls.Label> displays the `Title` property value, for each `FlyoutPageItem`. In addition, the flyout page has its `Title` and `IconImageSource` properties set. The icon will appear on the detail page, provided that the detail page has a title bar.
 
+Note that there is no default hamburger menu icon for iOS, as it is not a native iOS component. If you do not provide your own icon image, the default behavior for iOS/Catalyst with this control will be to show the title text of the button. You can override this default behavior by providing your own icon image.
+
 > [!NOTE]
 > The `Flyout` page must have its `Title` property set, or an exception will occur.
 

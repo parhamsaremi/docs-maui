@@ -552,8 +552,7 @@ This enables scenarios such as expanding the flyout across the entire screen, or
 
 ## Flyout icon
 
-By default, Shell apps have a hamburger icon which, when pressed, opens the flyout. This icon can be changed by setting the `Shell.FlyoutIcon` bindable property, of type <xref:Microsoft.Maui.Controls.ImageSource>, to an appropriate icon:
-
+By default, Shell apps have a hamburger icon which, when pressed, opens the flyout. However, it's important to note that this icon is not a native iOS component and there is no "default" hamburger menu icon for iOS. Instead, the default behavior for iOS/Catalyst with this control would be to show the title text of the button. You can still change the icon by setting the Shell.FlyoutIcon bindable property, of type xref:Microsoft.Maui.Controls.ImageSource, to an appropriate icon:
 ```xaml
 <Shell ...
        FlyoutIcon="flyouticon.png">
